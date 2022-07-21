@@ -1,0 +1,393 @@
+CHANGELOG for radiance
+
+OK, it is not a *real* change log, but a list of changes resulting from git log
+sometimes with some human annotation after the fact.
+
+This is version 2.6.0-rc1
+Fri Jun 24 13:22:27 PDT 2022
+
+9bd7608 (HEAD -> main) HMP-240: upgrade ruby to 2.7.6 in .ruby-version
+432736e (origin/main, origin/HEAD) Merge pull request #63 from cspace-deployment/dependabot/bundler/portal/rack-2.2.3.1
+b4faa7d NOJIRA: eliminate pesky deprecation messages for 'discard_flash_if_xhr'
+8f4b37c (tag: 2.5.0) revise CHANGELOG.txt and bump version to 2.5.0
+cf81aea revise CHANGELOG.txt and bump version to 2.5.0-rc13
+6a77bd8 (origin/dependabot/bundler/portal/rack-2.2.3.1) Bump rack from 2.2.3 to 2.2.3.1 in /portal
+f4ad040 Merge pull request #62 from cspace-deployment/dependabot/bundler/portal/nokogiri-1.13.6
+8d74569 Bump nokogiri from 1.13.5 to 1.13.6 in /portal
+42d74e5 revise CHANGELOG.txt and bump version to 2.5.0-rc12
+37a10e6 CSW-652: correct typo in email config for bampfa blacklight portal
+3360b13 revise CHANGELOG.txt and bump version to 2.5.0-rc11
+42213fe CSW-652: correct typo in email in blacklight portals
+6158b43 revise CHANGELOG.txt and bump version to 2.5.0-rc10
+8e7fedf CSW-634: blacklight relink.sh script needs to check correct db locations
+57cba42 HMP-234: need to use blacklight_range_limit widget v6.3.3 still
+cef2985 NOJIRA: remove superfluous line in bampfa blacklight portal deployment script
+177d1d1 HMP-234: use datemadeyear_i in Date Made facet in BAMPFA portal
+5c179e2 CSW-652: correct 'from' address for emails from blacklight portals
+1aea425 CSW-634: correct inline documentation
+e10ec7c Merge pull request #61 from felder/felder_changetag
+9a3b8c6 Changing which tag is queried to get environment info.
+dbd81eb Merge remote-tracking branch 'refs/remotes/origin/main'
+b8d4ad8 CSW-652: set 'from' address for emails from blacklight portals
+68199de HMP-2xx: display 12 objects in bampfa gallery instead of 10
+f4c7888 Merge pull request #60 from felder/felder_dbcleanaws
+e6f4af5 Adding dbcleanup script for aws.
+41c3802 NOJIRA: update Gemfile.lock for CVE-2022-22577
+a388b5f revise CHANGELOG.txt and bump version to 2.5.0-rc8
+a798594 CSW-634: blacklight relink.sh script needs to set symlinks for dev deployment
+c2e4211 revise CHANGELOG.txt and bump version to 2.5.0-rc7
+3e1b95e CSW-634: blacklight deployment script needs 'local' option, etc.
+34ae665 revise CHANGELOG.txt and bump version to 2.5.0-rc6
+0c2bf75 CSW-634: change prod/dev parameters in blacklight deployment scripts
+e972683 revise CHANGELOG.txt and bump version to 2.5.0-rc5
+8346dee CSW-634: blacklight deployment script 'relink.sh' is now platform-aware
+941c589 Merge pull request #59 from BAM-PFA/master
+657e690 HMP 2xx: add back some details left out of last bampfa commit (social partial and show screen detail)
+31b3d58 Merge pull request #58 from BAM-PFA/master
+de774d1 HMP 2xx: more work on "artist preview" box on BAMPFA show view
+5237f25 Merge remote-tracking branch 'upstream/main'
+4bf7e8b revise CHANGELOG.txt and bump version to 2.5.0-rc4
+7e32fe7 HMP-230: deploy scripts cannot in fact run in parallel
+7575f1c revise CHANGELOG.txt and bump version to 2.5.0-rc3
+e071af0 HMP-230: revise rails bundle options for blacklight deployment
+6340ccb Merge remote-tracking branch 'upstream/main'
+d676da1 HMP 2xx: work on bampfa artist "more works" preview grid on show screen
+1c23bf0 revise CHANGELOG.txt and bump version to 2.5.0-rc2
+d2d471a HMP-230: refactored blacklight deploy scripts to include bampfa portal
+4f96aa1 Merge pull request #56 from BAM-PFA/master
+c0e71b4 HMP 2xx: add "search by artist" links to artist names in bampfa splash image gallery
+4d7f56e Merge pull request #55 from BAM-PFA/master
+c121500 HMP 2xx: remove user login links from bampfa portal (routes still exist, theyre just hidden from view)
+e5cdb9f Merge pull request #54 from cspace-deployment/dependabot/bundler/portal/nokogiri-1.13.4
+f16e5d1 Bump nokogiri from 1.13.3 to 1.13.4 in /portal
+a7385f6 Merge pull request #53 from BAM-PFA/master
+2e638bf HMP 2xx: minor styling tweaks to bampfa portal (fix overlapping divs on image gallery; simplify some font sizing on splash page; update how year for copyright is displayed; fix path for copying english locale config)
+70948c0 Merge pull request #52 from cspace-deployment/dependabot/bundler/portal/puma-5.6.4
+8f59e2a Bump puma from 5.6.2 to 5.6.4 in /portal
+29f3fd2 HMP-226: initial revison of dbcleanup.sh -- root privs not required, etc.
+59908ba HMP-226: original version of dbcleanup.sh, the blacklight sqlite3 cleanup script
+284139d Merge pull request #51 from BAM-PFA/bampfa-portal
+4672d41 HMP 2xx: first draft of BAMPFA image carousel options
+3202cb8 NOJIRA: update ucb blacklight for CVE-2022-21831
+3304e1d revise CHANGELOG.txt and bump version to 2.5.0-rc1
+975265c NOJIRA: update rails in Gemfile per dependabot recommendation
+39d13bb Merge pull request #50 from cspace-deployment/dependabot/bundler/portal/nokogiri-1.13.2
+2fe7629 HMP-214: render 3d images using imageserver, not apache hack
+86081cb Bump nokogiri from 1.12.5 to 1.13.2 in /portal
+6994a40 Merge pull request #49 from BAM-PFA/master
+b10af7b HMP-20x: resize (and delete unused) images for CineFiles
+66bcf22 NOJIRA: the VERSION file should not be in github
+a29d031 CSW-574: use correct rails credentials filename in relink.sh
+beb8f91 Merge pull request #48 from BAM-PFA/master
+2314164 HMP-203: February 2022 update to CineFiles splash page
+0977c72 Merge pull request #47 from cspace-deployment/dependabot/bundler/portal/puma-4.3.11
+23ac027 Bump puma from 4.3.9 to 4.3.11 in /portal
+8ff32e2 (tag: 2.4.0) revise CHANGELOG.txt and bump version to 2.4.0
+866410f Merge pull request #46 from BAM-PFA/master
+1a900f1 HMP-2xx: fix elements of bampfa demo installation (catalog controller, merge conflict artifacts
+9ee926f Merge pull request #45 from BAM-PFA/master
+0724fef Merge branch 'cspace-deployment:main' into master
+5e02b22 HMP 2xx: flesh out demo BAMPFA site a bit; customize splash page following cinefiles example; add 404/500 details; rearrange field order
+31d1fb6 Merge pull request #44 from BAM-PFA/master
+ccaca63 HMP 2xx: flesh out demo BAMPFA site a bit; customize splash page following cinefiles example; add 404/500 details; rearrange field order
+10c6ff5 Merge pull request #43 from BAM-PFA/master
+f5e1d04 HMP-205: add nested layout partial for Devise (user login gem) actions; adds a layouts_helper and a new layout for Devise to wrap those actions in a single div within the main layout
+5289256 revise CHANGELOG.txt and bump version to 2.4.0-rc2
+ba98614 revise CHANGELOG.txt and bump version to 2.4.0-rc1
+f9026f3 CSW-574: change 'master' to 'main' in this repo
+6dfba4c HMP-204: turn off pahma and cinfiles portal main alerts
+745f6b5 HMP-204: 2 better alerts blacklight portals for next weeks upgrade
+a63221a HMP-204: set alerts on 2 blacklight portals for next weeks upgrade
+60dfb48 (tag: 2.3.0) revise CHANGELOG.txt and bump version to 2.3.0
+585aa4e revise CHANGELOG.txt and bump version to 2.3.0-rc2
+b6ba092 NOJIRA: make make-release.pl the same for both webapps and blacklight
+a8f8ca4 revise change log and VERSION file for version 2.3.0
+6177363 Merge pull request #42 from BAM-PFA/master
+baa68bb HMP-203: correction to silent film stars splash page URL
+c211d81 Merge pull request #41 from BAM-PFA/master
+93f6453 HMP xxx: fix bampfa footer logo width on mobile display; change doc "publication date" sorting to pubdatescalar_s for more accurate sorting
+654f0f8 HMP 203: copy edits to Nov 2021 cinefiles splash page
+82af5d8 Merge pull request #40 from BAM-PFA/master
+7de17a4 HMP-173: November 2021 content update to cinefiles splash page
+71bd12b HMP-200: minor revisions to bampfa blacklight demo
+b70389e Merge pull request #39 from BAM-PFA/master
+030845b HMP-202: add back the stanford css for global alerts; add definition for global-alerts css class
+2a1b2d6 CSW-202: end of cinefiles alert test
+d3d81dc CSW-202: test alerts for cinefiles
+07a9db6 Merge pull request #38 from cspace-deployment/dependabot/bundler/portal/puma-4.3.9
+389d55a Bump puma from 4.3.8 to 4.3.9 in /portal
+e521aca HMP-193: code reformat of render_warc
+5a48210 revise change log and VERSION file for version 2.3.0-rc1
+3333592 Merge branch 'master' of https://github.com/cspace-deployment/radiance
+1e822f2 HMP-200: temporary script to deploy bampfa blacklight demo
+9873293 Merge pull request #37 from cspace-deployment/dependabot/bundler/portal/nokogiri-1.12.5
+4d68291 Bump nokogiri from 1.11.7 to 1.12.5 in /portal
+35907b9 HMP-193: refactor recent warc updates a bit
+b20b994 Merge pull request #36 from BAM-PFA/master
+f3efe8e add first elements of WARC rendering
+7a32c6a HMP-192: unset maintenance alerts on blacklight portals
+5fc0c80 HMP-178: bulletproof the blacklight deploy scripts a bit
+e1e8740 HMP-192: set maintenance alerts on blacklight portals
+ab4781b (tag: 2.2.1) revise change log and VERSION file for version 2.2.1
+8107f7f HMP-200: early bampfa blacklight customizations
+1bb8f0d revise change log and VERSION file for version 2.2.1-rc3
+14bde40 Merge pull request #35 from cspace-deployment/dependabot/bundler/portal/puma-4.3.8
+fc79532 revise change log and VERSION file for version 2.2.1-rc2
+46286d4 NOJIRA: minor refactoring of blacklight relink script for dev deployments
+8c33b1e HMP-186: revise blacklight portal footers for accessibility, nondiscrimination & privacy
+1e2264e HMP-176: update blacklight gems, again
+c1db0ff Bump puma from 3.12.6 to 4.3.8 in /portal
+3afb205 revise change log and VERSION file for version 2.2.1-rc1
+fbb8aa7 HMP-176: update blacklight gems
+0e060fa HMP-173: initial version of script to update blacklight splash pages
+ae952d8 (tag: 2.2.0) revise change log and VERSION file for version 2.2.0
+415aadd revise change log and VERSION file for version 2.2.0-rc1
+2f0fc9e Merge pull request #29 from BAM-PFA/master
+40f0141 HMP-168: update cinefiles splash page for Spring 2021
+9953eef revise change log and VERSION file for version 2.2.0
+863d6c6 HMP-171: turn off alerts for cinefiles
+a4e8be4 HMP-171: turn off alerts for pahma
+5e0b8db revise change log and VERSION file for version 2.2.0-rc9
+6d8bd9b HMP-169: use full nine digit zip code in pahma footer
+48fefcc revise change log and VERSION file for version 2.2.0-rc8
+077f4f0 CSW-419: copy alert updates from cinefiles to pahma
+e31cfb7 Merge pull request #28 from BAM-PFA/master
+566eb4b CSW-419: Fix cinefiles global alerts display error (didn't include the alerts partial in the main blacklight.html.erb)
+5329350 revise change log and VERSION file for version 2.2.0-rc7
+d8e2981 CSW-419: update config for blacklight portal alerts
+4aeb31e revise change log and VERSION file for version 2.2.0-rc6
+55e1e93 CSW-419: blacklight portal alerts for pahma
+15137dd revise change log and VERSION file for version 2.2.0-rc5
+0f0881d CSW-419: further revise Gemfile.lock conflicts to allow alerts to be added
+7fa630b CSW-419: revise Gemfile.lock conflicts to allow alerts to be added
+4b8924c revise change log and VERSION file for version 2.2.0-rc4
+02319db HMP-169: fix pahma footer: kroeber hall is no more.
+1990af6 revise change log and VERSION file for version 2.2.0-rc3
+2b63596 CSW-386: now use correct variable name for advanced searching of loans
+a6087cc CSW-401: update pahma blacklight to render loans
+1ae8d71 CSW-401: update README.md for blacklight webapps
+aeda1d5 revise change log and VERSION file for version 2.2.0-rc2
+39699a1 CSW-389: update .travis.yml for 2.6.6
+0e810e8 revise change log and VERSION file for version 2.2.0-rc1
+3dfc39c CSW-389: update blacklight for ruby 2.6.6 and rbenv
+46aa59c CSW-389: minor syntax change in catalog controllers
+cc5f14a CSW-389: minor improvements to Blacklight README
+c42c128 add global_alerts gem; add custom alert partial for cinefiles, pointing to BAMPFA fork of Stanford's global_alerts
+596f612 (tag: 2.1.1) revise change log and VERSION file for version 2.1.1
+2748407 revise change log and VERSION file for version 2.1.1-rc4
+a575819 revise change log and VERSION file for version 2.1.1-rc3
+9b0390f HMP-162: update <meta> social media tags for PAHMA Blacklight
+ce6eb23 Merge branch 'master' of https://github.com/cspace-deployment/radiance
+97c92b4 CSW-367: use OriginalJpeg not Original for link in PAHMA Blacklight Portal
+b4e522d Merge pull request #26 from BAM-PFA/master
+447e0e4 HMP-160: update CineFiles social.html.erb with better <meta> tag contents
+6c86d6d revise change log and VERSION file for version 2.1.1-rc2
+6a51279 HMP-160: minor revision to blacklight deploy script
+6eca048 Merge pull request #25 from BAM-PFA/master
+5684aaa HMP-160: make generic error pages (404/500) that rely on any UCB TENANT's existing default page layout, without presupposing any other customizations (like images, etc.); NOTE: this deletes the default Rails /public/404.html and /public/500.html
+7df7b65 Merge pull request #24 from BAM-PFA/master
+5fba146 update version of codecov in Gemfile.lock
+a85e4a5 add handling for custom error pages (404/500); add CineFiles customized error pages
+32b17f6 CSW-264: update cinefiles splash page; add social meta tags for cinefiles
+7348f7b Merge pull request #22 from cspace-deployment/dependabot/bundler/portal/rack-2.2.3
+a229a07 Bump rack from 2.2.2 to 2.2.3 in /portal
+925c5f8 revise change log and VERSION file for version 2.1.1-rc1
+b128821 HMP-152: update blacklight portal gems for security and other reasons
+b7d9f48 Merge pull request #21 from cspace-deployment/dependabot/bundler/portal/puma-3.12.6
+5c68500 Bump puma from 3.12.4 to 3.12.6 in /portal
+92ccea7 Merge pull request #19 from cspace-deployment/dependabot/bundler/portal/kaminari-1.2.1
+16d8248 Merge pull request #20 from cspace-deployment/dependabot/bundler/portal/websocket-extensions-0.1.5
+311359d Bump websocket-extensions from 0.1.4 to 0.1.5 in /portal
+3753ef9 Bump kaminari from 1.2.0 to 1.2.1 in /portal
+57e8b41 Merge pull request #18 from BAM-PFA/master
+a85d545 CSW-274: add copyright section 108 warning language to document show display sidebar
+a3db76b (tag: 2.1.0) revise change log and VERSION file for version 2.1.0
+61f980e revise change log and VERSION file for version 2.0.10-rc7
+af1f36d HMP-149: correct path in this blacklight ucb deployment script
+56614d0 HMP-149: untangle two blacklight partials concerning pdfs
+4b5c8cf revise change log and VERSION file for version 2.1.0
+7f6f2fa HMP-133: there does not need to be an actual default ua tracking id
+798e93e revise change log and VERSION file for version 2.0.10-rc6
+1bb8e47 HMP-148: remove comment in robots.txt
+4e90b91 revise change log and VERSION file for version 2.0.10-rc5
+0f1a7a5 Merge pull request #17 from BAM-PFA/master
+f38aeed CSW-274: Incremental improvemetns to CineFiles CSS styling incorporating initial design feedback
+b733cff revise change log and VERSION file for version 2.0.10-rc4
+d8d2b98 HMP-144: portals should use correct production hostnames for sending email
+c901b7e CSW-285: a lil helper script for deploying both blacklight portals
+03074c2 revise change log and VERSION file for version 2.0.10-rc3
+9233c2b HMP-144: portals should use correct hostnames for sending email
+16e2cb6 revise change log and VERSION file for version 2.0.10-rc2
+dd9147c HMP-143, HMP-144: fix password reset bug, use correct favicons
+f32b3f3 HMP-143: fix the 'missing images on signout' bug for pahma, too
+575ed00 revise change log and VERSION file for version 2.0.10-rc1
+b487664 HMP-143: CineFiles: images will now appear on splash page after signout
+5d43abd HMP-143: CineFiles: change value appearing in browser tab
+4fda72a HMP-129: initial implementation of 'social media' features for pahma
+79c998f HMP-133: use cinefiles ua tracking id
+7bb8779 CSW-299: update robots.txt, allow all bots, for now
+c1ea707 CSW-293: apparently bundler deployment options are changing. use the new ones
+b2d9641 CSW-293: use production server for pdfs by default
+211b1fc (tag: 2.0.9) revise change log and VERSION file for version 2.0.9
+f9981c0 revise change log and VERSION file for version 2.0.9-rc9
+2d9a69c HMP-130: remove incorrectly committed file
+84bb242 HMP-130: revise link for pahma's twitter handle in blacklight footer
+773b181 Merge pull request #16 from BAM-PFA/master
+df42096 CSW-274: update URLs to static pages hosted @ bampfa.org
+c24dc5c HMP-130: revise link for pahma's twitter handle in blacklight footer
+845e565 CSW-285: update README.md for UCB Blacklight portals
+63dd159 revise change log and VERSION file for version 2.0.9-rc8
+667f773 CSW-285: update Gemfile.lock for ucb blacklight deployments
+2fc3627 CSW-285: refactor ucb blacklight scripts deploy.sh, relink.sh and install_ucb.sh a bit
+310ce84 CSW-285: further updates blacklight ucb customization script
+07ef87e CSW-285: typo in cinefiles footer
+f2f73da CSW-285: juggle a few blacklight files that are tenant specific
+96f2e8d revise change log and VERSION file for version 2.0.9-rc7
+d45728e CSW-293: make 'localhost' the default server for blacklight solr cores
+f287a4d CSW-297: minor refactoring of CineFiles Blacklight 'pdf restrictions checking code'
+dad9812 Merge pull request #15 from BAM-PFA/master
+f0bd79c CSW-274: redo logic for displaying PDFs and "open PDF in new window" functionality by reusing _pdf partial
+b9efd73 revise change log and VERSION file for version 2.0.9-rc6
+10b246e CSW-285: quiet down the blacklight ucb customization script
+14afc75 CSW-285: tweak blacklight deploy relink script to leave migration out
+91ecc48 CSW-296: tiny followup to last pull request: capitalization
+45cf875 Merge pull request #14 from BAM-PFA/master
+a256836 add `check_pdf` application_helper method to check PDFs access_code and render correct partial
+42c8a62 Merge pull request #13 from BAM-PFA/master
+4c5654b CSW-274: Add date range widgets to facet list
+de309c3 Merge pull request #11 from BAM-PFA/master
+93b89e8 revise change log and VERSION file for version 2.0.9-rc5
+3188e35 CSW-285: revise release-making script to not try to commit unstaged changes
+38128c0 CSW-274: restore 'Film ID' to searchability, so film/doc cross-linking continues to work
+5b2b6aa CSW-274: remove media links from index view
+d0aedc2 revise change log and VERSION file for version 2.0.9-rc4
+092adf9 Merge pull request #10 from BAM-PFA/master
+8c65447 CSW-274: Edits to cinefiles catalog controller, copyright language, and facet/field labels last minor tweaks to splash page
+0950549 Merge pull request #9 from BAM-PFA/cinesplash
+a93b165 CSW-274 start work on customizing cinefiles splash page; draft text, one customized splash tile
+401e585 revise change log and VERSION file for version 2.0.9-rc3
+9b70775 CSW-274: use refactored solr variable 'film_link_ss'; also recover code reformatting in helper
+5b4d808 revise change log and VERSION file for version 2.0.9-rc2
+7305ca2 CSW-274: for now, use solr server on webapps-dev by default
+5a62dc0 CSW-274: tidy up ucb-specific partials a bit
+f4c8a31 Merge pull request #8 from BAM-PFA/master
+58edcf4 oops only made changes to deployed footer partial and not cinefiles_footer, this fixes it
+78a49cf actually add cinefiles_variables.scss; incorporate JBL's footer language and BL logo
+421ca1a replace (?) cinefiles header and user util links partials
+0ecd06a Merge remote-tracking branch 'upstream/master'
+85ed4d5 bampfa cinefiles resolve merge conflicts
+5388d52 more tweaks to cinefiles header and colors; add cinefiles_variables.scss and add it to install_ucb.sh
+ac852d0 CSW-274: code reformat plus one teensy legacy bug
+c28162c CSW-274: pass local variable (csid) to cinefiles pdf renderer
+a79c977 CSW-274: cinefiles footer variations
+87a81cf CSW-274: code reformat only, no changes
+dabe83c CSW-274: include all possible cinefiles header logos, for now
+c8b7aa6 CSW-285: more bulletproofing of blacklight ucb-specific customization script
+93ebc66 CSW-274: code reformatting and adding back in the ark decoder
+b9908a9 CSW-274: add links to film titles in docs, docs in film records, for helper in extras/
+d1b9682 CSW-274: add links to film titles in docs, docs in film records
+f4d00e4 CSW-285: more minor refactoring of blacklight deployment scripts
+11679dc CSW-285: minor refactoring of blacklight deployment scripts
+008e415 revise change log and VERSION file for version 2.0.9-rc1
+e6500f2 CSW-274: incremental improvements to cinefiles blacklight look-and-feel and functionality
+496df29 more work on cinefiles header; still a weird margin @ left of header logo
+1e23bd1 fix path in install_ucb.sh
+b06a895 fix name of custom user_util_links partial
+012d3b5 fix typo
+d9d6d12 add customized extras.scss to install_ucb.sh; further work on cinefiles header
+1561cdd start working on cinefiles header; update install_ucb.sh to account for missing /etc/ in custom partials paths
+16dc59b add header logo elements; mod footer background
+c23b4a2 revise change log and VERSION file for version 2.0.9-rc3
+f36df27 Merge branch 'master' of https://github.com/cspace-deployment/radiance
+431805f CSW-245: minor updates to cinefiles and pahma splash pages, installation tweak
+819f9fa CSW-245: stylesheet revisions to support 'titles' in cinefiles splash page
+1a021ad CSW-245: revise cinefiles controller to handle new 'common_title' field
+6f0f36c CSW-245: first revision of cinefiles portal footer
+0d0d457 CSW-245: first version of cinefiles portal footer, by mcq
+8a550ad Merge pull request #7 from cspace-deployment/dependabot/bundler/portal/puma-3.12.4
+e9490b8 Bump puma from 3.12.3 to 3.12.4 in /portal
+c582bd6 Merge branch 'master' of https://github.com/cspace-deployment/radiance
+e14a6ef CSW-245: a bit more re-arranging cinefiles blacklight tiles on splash page
+450fb18 CSW-245: re-arrange cinefiles blacklight tiles on splash page
+d3fef7d Merge pull request #6 from cspace-deployment/dependabot/bundler/portal/puma-3.12.3
+2fcf2d8 CSW-245: additional Blacklight frontend stuff for cinefiles (mostly splash page)
+02236e5 Bump puma from 3.12.2 to 3.12.3 in /portal
+d73328c CSW-242: initial 'IP restrictions' for CineFiles Blacklight Portal, etc.
+4fcb26d revise change log and VERSION file for version 2.0.9-rc2
+35fb4cf NOJIRA: update README.md, revert 'credentials edit' deployment tweak only
+6ec2bcc revise change log and VERSION file for version 2.0.9-rc1
+e4d4a0f NOJIRA: recommended security updates and a deployment tweak only
+0be8480 Merge branch 'master' of https://github.com/cspace-deployment/radiance
+d985f8a Merge pull request #5 from cspace-deployment/dependabot/bundler/portal/nokogiri-1.10.8
+c39d605 Bump nokogiri from 1.10.4 to 1.10.8 in /portal
+4f1a743 CSW-228: do not show images in CineFile BL full display
+3b54c2f CSW-228: modernize Blacklight@UCB README.md
+8fe02e3 Merge pull request #3 from cspace-deployment/dependabot/bundler/portal/rack-2.1.2
+cc66a1d Bump rack from 2.0.7 to 2.1.2 in /portal
+9b9020a Merge pull request #2 from cspace-deployment/dependabot/bundler/portal/loofah-2.4.0
+fe00363 Merge pull request #4 from cspace-deployment/dependabot/bundler/portal/puma-3.12.2
+041bd50 Bump puma from 3.12.1 to 3.12.2 in /portal
+80b42ce Bump loofah from 2.2.3 to 2.4.0 in /portal
+450e99c CSW-227: revisions to CineFiles BL demo
+d8fea5d CSW-229: revise config for CineFiles BL demo
+918a7d3 CSW-226: revisions to CineFiles demo to support revised Solr core
+794893c (tag: 2.0.8) revise change log and VERSION file for version 2.0.8
+b1eaea9 revise change log and VERSION file for version 2.0.8-rc3
+b88e4e2 HMP-114: continue minor improvements to release-making script
+9d1ff10 revise change log and VERSION file for version 2.0.8-rc2
+cb1e670 HMP-109: use localhost as default solr server
+e19f4e5 revise change log and VERSION file for version 2.0.8-rc1
+ae76070 HMP-109: use 'objmusno_s_lower' as the search field for ARKs
+98bb301 CSW-132: add a customized cinefiles controller for the 'demo'
+1b16fa7 (tag: 2.0.7) revise change log and VERSION file for version 2.0.7
+7717c35 HMP-114: tweak release script inline documentation
+aad7b81 HMP-114: revise deployment scripts for 'new' blacklight server
+c89b9d6 HMP-78: improvements copied to this 'release tag helper script'
+45cb7e0 (tag: 2.0.6) revise change log and VERSION file for version 2.0.6-rc2
+7a6fe6b HMP-78: a script to make release tags and change logs for blacklight portals
+2c5a72d HMP-68: fix typo in landing page for Blacklight demos
+d192bc2 HMP-68: a landing page for the Blacklight demos
+8517256 HMP-68: review botgarden splash page (better images)
+9d5a6d1 HMP-68: revise query syntax for splash page queries
+ac2e1dd Merge branch 'master' of https://github.com/cspace-deployment/radiance
+f771799 HMP-68: helpers to generate tenant-specific splash partials
+190fdc6 CSW-68: deploy tenant-specific 'splash partial' for blacklight demos
+963e0ec CSW-68: update the ruby god file for the demos
+87ea147 HMP-101: support case insensitive ARKs, but promote lower case versions as 'standard'
+d34c5bd (tag: 2.0.5) CSW-68: add a 'change log'
+c0e536e HMP-99: revised ARK implementation to handle some corner cases
+dc522a8 Merge pull request #1 from jblowe/master
+800f7d4 CSW-68: instructions for making BL 'demo' deploys on EC2
+b97786c CSW-68: ruby god file, in case it comes in handy
+fec51b8 CSW-68: use generic page title for BL demos
+f6cd96b CSW-68: generic favicon for demo installs
+9a01c97 CSW-68: helpers scripts for BL demo installs
+124a413 CSW-68: incremental improvements to blacklight 'demo' install
+ff63fe9 CSW-68: improve .gitignore
+f521a97 CSW-68: add a README for the 'demo' deployment process
+48cd675 CSW-68: fix indentation error in customization script
+565cd71 CSW-68: revised Blacklight components for 'demo' portals
+a237eef HMP-99: recover lost characters in museum number; encode hyphen as =
+1dde195 (tag: 2.0.4) HMP-94: final (hopefully) revisions based on user feedback
+796cdd5 HMP-94: code cleanup only, and inline doc
+d09c995 HMP-94: initial implementation of ARK-enabled portal
+f3eb59e HMP-85: still a few details in the relink.sh script to handle
+93053bd (tag: 2.0.3) HMP-85: revised deployment scripts to handle db:migrate properly
+6b42737 HMP-85: revise READMES: more about db:migrate
+346f8c5 HMP-84: part 1: update Gemfile.lock based on Gemfile changes
+ec876c9 HMP-84: part 1: update Gemfile for security reasons
+8ef9c3b HMP-79: update Gemfile.lock
+2f4bb24 HMP-79: initial steps to get travis and codecov working together
+9d54cf3 HMP-53: fix typo in README.md
+5e34ff5 HMP-73: incremental improvements to deployment details.
+77acaac HMP-53: point to correctly repo for travis ci
+19fd2c3 (tag: 2.0.2) HMP-53: add .travis.yml and travis badge, in prep for doing CI
+9bd3944 HMP-68: minor revisions to rendering of X3D media
+e650551 (tag: 2.0.1) HMP-53: add a travis.yml file, baby steps towards CI...
+8ffac09 HMP-53: production deployment should not perform db:migrate
+548f7e4 HMP-53: improve deployment documentation
+aad7345 HMP-53: remove a few extraneous lines from Gemfile
+61246ad (tag: 2.0.0) HMP-53: revise documentation
+05c7e06 HMP-53: more documentation and helpers
+6cf209f HMP-63: revised customizations for UCB PAHMA Blacklight Portal
+3b0aeeb Initial commit

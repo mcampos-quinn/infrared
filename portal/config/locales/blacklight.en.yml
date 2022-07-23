@@ -1,3 +1,9 @@
 en:
   blacklight:
-    application_name: 'Blacklight'
+    application_name: 'bampfa'
+    search:
+      form:
+        search:
+          label: 'search for'
+          placeholder: 'Enter a few keywords here to get started...'
+      start_over: 'Reset'

@@ -4,7 +4,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '2.7.6'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '>= 6'
+# also nb: some of the plugins we use aren't ready for rails 7
+gem 'rails', '>= 6', '< 7'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server
@@ -76,4 +77,13 @@ gem 'blacklight-marc', '>= 7.0.0.rc1', '< 8'
 
 gem "passenger", ">= 5.0.25", require: "phusion_passenger/rack_handler"
 
+# ucb customizations
+gem 'blacklight-gallery'
+gem 'blacklight_range_limit'
+gem 'blacklight_advanced_search'
+#gem 'blacklight-hierarchy'
 
+# Stanford's alerts banner gem
+gem 'global_alerts'
+
+gem 'openseadragon', '>= 0.2.0'

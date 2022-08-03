@@ -51,6 +51,7 @@ cp ${extra_dir}/${tenant}_favicon.png app/assets/images/favicon.png
 # generic helpers and config, but some do need to be configured per-tenant
 cp ${extra_dir}/application.rb config/application.rb
 cp ${extra_dir}/application_helper.rb app/helpers
+cp ${extra_dir}/thumbnail_presenter.rb app/presenters/blacklight/thumbnail_presenter.rb
 #cp ${extra_dir}/routes.rb config/routes.rb
 ####cp ${extra_dir}/catalog_helper_behavior.rb app/helpers/blacklight
 cp ${extra_dir}/blacklight.yml config
@@ -77,7 +78,8 @@ cp ${extra_dir}/${tenant}_footer.html.erb app/views/shared/_footer.html.erb
 #cp ${extra_dir}/${tenant}_home_text.html.erb app/views/catalog/_home_text.html.erb
 #cp ${extra_dir}/${tenant}_blacklight.html.erb app/views/layouts/blacklight/base.html.erb
 # splash page goes into _home_text_html.erb for now
-cp ${extra_dir}/${tenant}_splash.html.erb app/views/shared/_home_text.html.erb
+mkdir app/views/catalog
+cp ${extra_dir}/${tenant}_splash.html.erb app/views/catalog/_home_text.html.erb
 
 cp ${extra_dir}/${tenant}_search_form.html.erb app/views/shared/_search_form.html.erb
 cp ${extra_dir}/${tenant}_show_sidebar.html.erb app/views/shared/_show_sidebar.html.erb

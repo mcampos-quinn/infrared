@@ -16,9 +16,10 @@ class CatalogController < ApplicationController
     config.show.tile_source_field = :content_metadata_image_iiif_info_ssm
     config.show.partials.insert(1, :openseadragon)
     config.view.gallery.partials = [:index_header, :index]
-    config.view.masonry.partials = [:index]
+    # disable 'masonry' view
+    # config.view.masonry.partials = [:index]
     # no slideshow until thumbnail rendering is fixed
-    #config.view.slideshow.partials = [:index]
+    # config.view.slideshow.partials = [:index]
 
     # disable these three document action until we have resources to configure them to work
     config.show.document_actions.delete(:citation)

@@ -87,11 +87,11 @@ cp ${extra_dir}/${tenant}_extras.scss app/assets/stylesheets/extras.scss
 cp ${extra_dir}/${tenant}_variables.scss app/assets/stylesheets/_variables.scss
 #
 ## so far, these two css files are only needed for cinefiles, for tiles on the splash page
-#cp ${extra_dir}/${tenant}_tiles.css app/assets/stylesheets/tiles.css
-#cp ${extra_dir}/${tenant}_normalize.min.css app/assets/stylesheets/normalize.min.css
+cp ${extra_dir}/${tenant}_tiles.css app/assets/stylesheets/tiles.css
+cp ${extra_dir}/${tenant}_normalize.min.css app/assets/stylesheets/normalize.min.css
 #
 ## custom signup for cinefiles
-#cp ${extra_dir}/${tenant}_new.html.erb app/views/devise/registrations/new.html.erb
+cp ${extra_dir}/${tenant}_new.html.erb app/views/devise/registrations/new.html.erb
 #
 ## custom cinefiles restricted PDF warning
 cp ${extra_dir}/${tenant}_pdfs.html.erb app/views/shared/_pdfs.html.erb

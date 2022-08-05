@@ -37,8 +37,8 @@ class CatalogController < ApplicationController
     config.add_nav_action(:search_history, partial: 'blacklight/nav/search_history')
 
     # solr path which will be added to solr base url before the other solr params.
-    #config.solr_path = 'select'
-    #config.document_solr_path = 'get'
+    config.solr_path = 'select'
+    config.document_solr_path = 'select'
 
     # items to show per page, each number in the array represent another option to choose from.
     #config.per_page = [10,20,50,100]
@@ -90,11 +90,9 @@ class CatalogController < ApplicationController
 
     # solr field configuration for search results/index views
     # UCB customization: list of blobs is hardcoded for both index and show displays
-    #{index_title}
     config.index.thumbnail_field = 'blob_ss'
 
     # solr field configuration for document/show views
-    #{show_title}
     config.show.thumbnail_field = 'blob_ss'
     config.show.catalogcard_field = 'card_ss'
 
@@ -195,8 +193,6 @@ class CatalogController < ApplicationController
     # label in pulldown is followed by the name of the SOLR field to sort by and
     # whether the sort is ascending or descending (it must be asc or desc
     # except in the relevancy case).
-
-    #{sort}
 
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
@@ -419,25 +415,21 @@ class CatalogController < ApplicationController
     config.add_facet_field 'loan_info_ss', label: 'Loans', limit: true
     #config.add_facet_field 'objkeelingser_s', label: 'Keeling series', limit: true, index_range: true
     #config.add_facet_field 'objdept_s', label: 'Department', limit: true
-
-    # gallery
   end
 
   def decode_ark
     # decode ARK ID, e.g. hm21114461@2E1 -> 11-4461.1, hm210k3711a@2Df -> K-3711a-f
     museum_number = CGI.unescape(params[:ark].gsub('@','%')).sub('hm2','')
     museum_number = if museum_number[0] == 'x'
-        museum_number[1..-1]
+      museum_number[1..-1]
     else
-        left, right = museum_number[1..2], museum_number[3..-1]
-        left = left.gsub(/^0+/, '')
-        right = right.gsub(/^0+/, '')
-        left + '-' + right
+      left, right = museum_number[1..2], museum_number[3..-1]
+      left = left.gsub(/^0+/, '')
+      right = right.gsub(/^0+/, '')
+      left + '-' + right
     end
-
     redirect_to  :controller => 'catalog', action: 'index', search_field: 'objmusno_s_lower', q: '"' + museum_number + '"'
     #redirect_to  :controller => 'catalog', action: 'show', id: csid
-
   end
 
 end

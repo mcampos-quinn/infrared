@@ -37,8 +37,8 @@ class CatalogController < ApplicationController
     config.add_nav_action(:search_history, partial: 'blacklight/nav/search_history')
 
     # solr path which will be added to solr base url before the other solr params.
-    #config.solr_path = 'select'
-    #config.document_solr_path = 'get'
+    config.solr_path = 'select'
+    config.document_solr_path = 'select'
 
     # items to show per page, each number in the array represent another option to choose from.
     #config.per_page = [10,20,50,100]
@@ -321,8 +321,8 @@ class CatalogController < ApplicationController
     config.add_show_field 'blob_ss', helper_method: 'render_linkless_media', label: 'Images'
     # config.add_show_field 'blob_ss', helper_method: 'render_restricted_media', label: 'Images'
     # config.add_show_field 'card_ss', helper_method: 'render_media', label: 'Cards'
-		config.add_show_field 'pdf_ss', helper_method: 'check_and_render_pdf', label: 'PDFs'
-		# using docurl as a placeholder until there are real WARC urls in the solr extract
+    config.add_show_field 'pdf_ss', helper_method: 'check_and_render_pdf', label: 'PDFs'
+    # using docurl as WARC urls
     config.add_show_field 'docurl_s', helper_method: 'render_warc', label: 'Web Archive'
     # config.add_show_field 'code_s', label: 'Access code'
 
@@ -340,8 +340,6 @@ class CatalogController < ApplicationController
     config.add_show_field 'film_link_ss', helper_method: 'render_doc_link', label: 'View documents'
     # only for testing... allows one to see the value of access code in the ui
     # config.add_show_field 'code_s', label: 'Access code'
-
-    # gallery
 
     #
     # "INDEX" DISPLAY FIELDS

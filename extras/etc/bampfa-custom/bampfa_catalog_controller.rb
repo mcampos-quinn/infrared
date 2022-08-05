@@ -238,7 +238,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'datesactive_s', label: 'Dates Active'
     config.add_show_field 'measurement_s', label: 'Dimensions'
     config.add_show_field 'materials_s', label: 'Materials'
-		config.add_show_field 'idnumber_s', label: 'Accession Number'
+	config.add_show_field 'idnumber_s', label: 'Accession Number'
     config.add_show_field 'fullbampfacreditline_s', label: 'Full BAMPFA credit line'
     config.add_show_field 'copyrightcredit_s', label: 'Copyright credit'
     config.add_show_field 'century_s', label: 'Century'

@@ -74,11 +74,9 @@ class CatalogController < ApplicationController
 
     # solr field configuration for search results/index views
     # UCB customization: list of blobs is hardcoded for both index and show displays
-    #{index_title}
     config.index.thumbnail_field = 'blob_ss'
 
     # solr field configuration for document/show views
-    #{show_title}
     #config.show.thumbnail_field = 'blob_ss'
     #config.show.catalogcard_field = 'card_ss'
 

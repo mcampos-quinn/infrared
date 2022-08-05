@@ -98,15 +98,23 @@ h1, .h1 {
     margin: auto;
 }
 
-// NAVBAR
+// NAVBAR and BG
 
-.navbar-inverse .navbar-nav > li > a {
-  color: white;
+//.navbar-inverse .navbar-nav > li > a {
+//  color: white;
+//}
+
+//.navbar-inverse {
+//  background: gray;
+//  margin-bottom: 0;
+//}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
 }
 
-.navbar-inverse {
-  background: gray;
-  margin-bottom: 0;
+.navbar-expand-md .navbar-nav {
+    margin-top: -40px;
 }
 
 @media print {

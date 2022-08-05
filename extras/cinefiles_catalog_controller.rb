@@ -91,7 +91,6 @@ class CatalogController < ApplicationController
     # solr field configuration for document/show views
     #{show_title}
     config.show.thumbnail_field = 'blob_ss'
-    config.show.catalogcard_field = 'card_ss'
 
     # solr fields that will be treated as facets by the blacklight application
     #   The ordering of the field names is the order of the display

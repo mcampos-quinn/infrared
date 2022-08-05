@@ -51,7 +51,7 @@ cp ${extra_dir}_tmp/${tenant}_favicon.png app/assets/images/favicon.png
 cp ${extra_dir}_tmp/application.rb config/application.rb
 cp ${extra_dir}_tmp/application_helper.rb app/helpers
 cp ${extra_dir}_tmp/thumbnail_presenter.rb app/presenters/blacklight/thumbnail_presenter.rb
-#cp ${extra_dir}_tmp/routes.rb config/routes.rb
+cp ${extra_dir}_tmp/routes.rb config/routes.rb
 ####cp ${extra_dir}_tmp/catalog_helper_behavior.rb app/helpers/blacklight
 cp ${extra_dir}_tmp/blacklight.yml config
 cp ${extra_dir}_tmp/blacklight.en.yml config/locales

@@ -8,7 +8,6 @@ Rails.application.routes.draw do
   mount Blacklight::Engine => '/'
   mount BlacklightAdvancedSearch::Engine => '/'
 
-  Blacklight::Marc.add_routes(self)
   root to: "catalog#index"
   concern :searchable, Blacklight::Routes::Searchable.new
 
@@ -25,7 +24,7 @@ Rails.application.routes.draw do
   end
 
   get '/*ark_tag/:naan/:ark' => 'catalog#decode_ark', constraints: { ark_tag:'ark:' }
-	get '/add_gallery_items' => "gallery#add_gallery_items"
+  get '/add_gallery_items' => "gallery#add_gallery_items"
 
   resources :bookmarks do
     concerns :exportable

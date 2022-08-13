@@ -186,7 +186,6 @@ module ApplicationHelper
     end
   end
 
-
   def render_x3d_csid options = {}
     # render x3d object
     content_tag(:div) do
